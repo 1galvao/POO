@@ -12,15 +12,20 @@ package POO;
 public class Principal {
     
     public static void main(String[] args){
+        //CONSTRUTOR 1 - com assinatura 
+        Carro carro = new Carro("Miura X8","Vermelho","OPR-2365",2);
     
-        Carro carro = new Carro();
-    
-        carro.setCor("Azul");
-        carro.setNumPortas(2);
-        carro.setPlaca("OPR-1290");
-        carro.setTipo("Miura X8");
-        
         carro.imprimeDadosCarro();
+        
+        Carro outroCarro = new Carro();
+        outroCarro.setTipo("Gol");
+        outroCarro.setCor("Verde");
+        outroCarro.setPlaca("OXE-2114");
+        outroCarro.setNumPortas(2);
+        
+        /*double a=3, b=2;
+        System.out.println("Quadrado de "+a+" "
+                + "é "+Calculo.elevar(a));*/
         
         Pessoa pessoa = new Pessoa();
         
@@ -30,5 +35,7 @@ public class Principal {
         pessoa.setRG(7.017345);
         
         pessoa.imprimeDadosPessoa();
+        
+        
     }            
 }
