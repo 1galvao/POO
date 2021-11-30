@@ -11,12 +11,12 @@ package POO;
  */
 public class Carro {
     
-    String tipo; 
-    String cor; 
-    String placa; 
-    int numPortas;
-    Pessoa dono;
-    int cambio;
+    private String tipo; 
+    private String cor; 
+    private String placa; 
+    private int numPortas;
+    private Pessoa dono;
+    private int cambio;
 
     public int getCambio() {
         System.out.print("marhca: "+this.cambio);
@@ -27,19 +27,19 @@ public class Carro {
         this.cambio = cambio;
     }
     
-    void Ligar(){
+    public void Ligar(){
         System.out.println("Ligando Carro");
     }
     
-    void Desligar(){
+    public void Desligar(){
         System.out.println("Desligando Carro");
     }
     
-    void Acelerar(){
+    public void Acelerar(){
         System.out.println("Acelerando Carro");
     }
     
-    void Frear(){
+    public void Frear(){
         System.out.println("Freando Carro");
     }
     
@@ -63,7 +63,7 @@ public class Carro {
                
     }
     
-    void imprimeDadosCarro(){
+    public void imprimeDadosCarro(){
         System.out.println();
         System.out.println("---------Carro---------");
         System.out.println("Cor do carro: "+cor);
