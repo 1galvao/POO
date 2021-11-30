@@ -12,30 +12,38 @@ package POO;
 public class Principal {
     
     public static void main(String[] args){
-        //CONSTRUTOR 1 - com assinatura 
-        Carro carro = new Carro("Miura X8","Vermelho","OPR-2365",2);
-    
+        
+       
+        Pessoa p = new Pessoa();
+        
+        p.setNome("João");
+        p.setIdade(15);
+        p.setAltura(1.75);
+        p.setRG(7017345);
+   
+        p.imprimeDadosPessoa();
+        
+        Carro carro = new Carro();
+        carro.setTipo("Gol");
+        carro.setCor("Verde");
+        carro.setPlaca("OXE-2114");
+        carro.setNumPortas(2);
+        carro.setDono(p);
+        
+        p.setCarro(carro);
+        p.setCarro(carro);
+        p.ligarCarro();
+        p.setCambioMarcha(1);
+        p.Acelerar();
+        p.setCambioMarcha(2);
+        p.Acelerar();
+        p.setCambioMarcha(3);
+        p.Acelerar();
+        p.desligarFrear();
+        p.desligarCarro();
+        
+        p.getCarro().getCambio();
+        
         carro.imprimeDadosCarro();
-        
-        Carro outroCarro = new Carro();
-        outroCarro.setTipo("Gol");
-        outroCarro.setCor("Verde");
-        outroCarro.setPlaca("OXE-2114");
-        outroCarro.setNumPortas(2);
-        
-        /*double a=3, b=2;
-        System.out.println("Quadrado de "+a+" "
-                + "é "+Calculo.elevar(a));*/
-        
-        Pessoa pessoa = new Pessoa();
-        
-        pessoa.setNome("João");
-        pessoa.setIdade(15);
-        pessoa.setAltura(1.75);
-        pessoa.setRG(7.017345);
-        
-        pessoa.imprimeDadosPessoa();
-        
-        
     }            
 }

@@ -12,9 +12,38 @@ package POO;
 public class Pessoa {
     
     String nome;
-    Double altura;
+    double altura;
     int idade;
-    Double RG;
+    int RG;
+    Carro carro1;
+    
+    void ligarCarro(){
+        carro1.Ligar();
+    }
+
+    void desligarCarro(){
+        carro1.Desligar();
+    }
+    
+    void desligarFrear(){
+        carro1.Frear();
+    }
+    
+    void Acelerar(){
+        carro1.Acelerar();
+    }
+    
+    void setCambioMarcha(int marcha){
+        carro1.setCambio(marcha);
+    }
+    
+    public Carro getCarro() {
+        return carro1;
+    }
+
+    public void setCarro(Carro carro1) {
+        this.carro1 = carro1;
+    }
     
     void imprimeDadosPessoa(){
         System.out.println("---------Pessoa--------");
@@ -22,6 +51,7 @@ public class Pessoa {
         System.out.println("Idade da pessoa: "+idade);
         System.out.println("Altura da pessoa: "+altura);
         System.out.println("Numero do RG: "+RG);
+        System.out.println();
     }
    
     public String getNome() {
@@ -37,7 +67,7 @@ public class Pessoa {
     }
 
     
-    public void setAltura(Double altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
@@ -49,11 +79,11 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public Double getRG() {
+    public int getRG() {
         return RG;
     }
 
-    public void setRG(Double RG) {
+    public void setRG(int RG) {
         this.RG = RG;
     }
     
